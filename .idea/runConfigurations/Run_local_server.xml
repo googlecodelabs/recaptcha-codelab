@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="appengine:devserver (phase1)" type="MavenRunConfiguration" factoryName="Maven">
+  <configuration default="false" name="Run local server" type="MavenRunConfiguration" factoryName="Maven">
     <MavenSettings>
       <option name="myGeneralSettings" />
       <option name="myRunnerSettings" />
