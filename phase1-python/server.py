@@ -20,5 +20,5 @@ class Handler(BaseHTTPRequestHandler):
     self.wfile.write(open(curdir + sep + 'page.html').read() % message)
 
 if __name__ == '__main__':
-  httpd = HTTPServer(('', 7777), Handler)
+  httpd = HTTPServer(('', 8080), Handler)
   httpd.serve_forever()
