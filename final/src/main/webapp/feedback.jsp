@@ -4,7 +4,7 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
       function onSubmit() {
-        document.getElementById("demo-form").submit();
+        document.getElementById('demo-form').submit();
       }
     </script>
     <style>
@@ -24,17 +24,17 @@
   </head>
   <body>
     <h3>Give us feedback on our new webpage!</h3>
-    <% if ("true".equals(request.getParameter("success"))) { %>
+    <% if ('true'.equals(request.getParameter('success'))) { %>
       <div>Thanks for the feedback!</div>
-    <% } else if ("false".equals(request.getParameter("success"))) { %>
+    <% } else if ('false'.equals(request.getParameter('success'))) { %>
       <div>There was an error.</div>
     <% }%>
-    <form id="demo-form" action="/feedback" method="POST">
-      Your comment <br><textarea name="feedback" cols="50" rows="5"></textarea><br>
+    <form id='demo-form' action='/feedback' method='POST'>
+      Your comment <br><textarea name='feedback' cols='50' rows='5'></textarea><br>
       <!-- Replace this with your site key -->
-      <button class="g-recaptcha"
-              data-sitekey="6LfeHx4UAAAAAAKUx5rO5nfKMtc9-syDTdFLftnm"
-              data-callback="onSubmit"> Submit </button>
+      <button class='g-recaptcha'
+              data-sitekey='6LfeHx4UAAAAAAKUx5rO5nfKMtc9-syDTdFLftnm'
+              data-callback='onSubmit'> Submit </button>
     </form>
   </body>
 </html>

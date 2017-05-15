@@ -3,7 +3,7 @@
     <title>Suggestion page</title>
     <script>
       function onSubmit() {
-        document.getElementById("demo-form").submit();
+        document.getElementById('demo-form').submit();
       }
     </script>
     <style>
@@ -23,15 +23,15 @@
   </head>
   <body>
     <h3>Give us feedback on our new webpage!</h3>
-    <% if ("true".equals(request.getParameter("success"))) { %>
-      <div class="status-message">Thanks for the feedback!</div>
-    <% } else if ("false".equals(request.getParameter("success"))) { %>
-      <div class="status-message">There was an error.</div>
+    <% if ('true'.equals(request.getParameter('success'))) { %>
+      <div class='status-message'>Thanks for the feedback!</div>
+    <% } else if ('false'.equals(request.getParameter('success'))) { %>
+      <div class='status-message'>There was an error.</div>
     <% }%>
-    <form id="demo-form" action="/feedback" method="POST">
-      Your comment <br><textarea name="feedback" cols="50" rows="5"></textarea><br>
+    <form id='demo-form' action=''/feedback' method='POST'>
+      Your comment <br><textarea name='feedback' cols='50' rows='5'></textarea><br>
       <!-- Replace this with your site key -->
-      <button onSubmit="onSubmit">Submit</button>
+      <button onClick='onSubmit'>Submit</button>
     </form>
   </body>
 </html>
