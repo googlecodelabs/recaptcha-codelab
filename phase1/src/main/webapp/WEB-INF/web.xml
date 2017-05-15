@@ -12,6 +12,6 @@
     <url-pattern>/feedback</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
-    <welcome-file>feedback.jsp</welcome-file>
+    <welcome-file>feedback</welcome-file>
   </welcome-file-list>
 </web-app>

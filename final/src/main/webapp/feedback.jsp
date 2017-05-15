@@ -24,11 +24,11 @@
   </head>
   <body>
     <h3>Give us feedback on our new webpage!</h3>
-    <% if ('true'.equals(request.getParameter('success'))) { %>
-      <div>Thanks for the feedback!</div>
-    <% } else if ('false'.equals(request.getParameter('success'))) { %>
-      <div>There was an error.</div>
-    <% }%>
+     <% if (Boolean.TRUE.equals(request.getAttribute("success"))) { %>
+         <div class='status-message'>Thanks for the feedback!</div>
+       <% } else if (Boolean.FALSE.equals(request.getAttribute("success"))) { %>
+         <div class='status-message'>There was an error.</div>
+       <% }%>
     <form id='demo-form' action='/feedback' method='POST'>
       Your comment <br><textarea name='feedback' cols='50' rows='5'></textarea><br>
       <!-- Replace this with your site key -->
