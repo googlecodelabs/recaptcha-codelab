@@ -12,12 +12,12 @@ class Handler(BaseHTTPRequestHandler):
 
   def do_GET(self):
     self.set_headers();
-    self.wfile.write(open(curdir + sep + 'page.html').read() % '')
+    self.wfile.write(open(curdir + sep + 'feedback.html').read() % '')
 
   def do_POST(self):
     self.set_headers();
     message = 'Thanks for the feedback!'
-    self.wfile.write(open(curdir + sep + 'page.html').read() % message)
+    self.wfile.write(open(curdir + sep + 'feedback.html').read() % message)
 
 if __name__ == '__main__':
   httpd = HTTPServer(('', 8080), Handler)
