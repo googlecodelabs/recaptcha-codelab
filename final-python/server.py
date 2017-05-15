@@ -40,3 +40,4 @@ class Handler(BaseHTTPRequestHandler):
 if __name__ == '__main__':
   httpd = HTTPServer(('', 8080), Handler)
   httpd.serve_forever()
+  print("Server is running at http://localhost:8080")
